@@ -44,7 +44,7 @@ class DeleteCSV(tk.Frame):
                 
         self.mode_var.trace_add('write', mode_changed)
         
-        convert_button = tk.Button(self, text='Convert CSV to JSON', command=self.convert_csv)
+        convert_button = tk.Button(self, text='Delete using CSV', command=self.convert_csv)
         convert_button.grid(row=3, column=0, columnspan=3, pady=10)
         
         return_home_button = tk.Button(self, text='Home', command=self.return_home)

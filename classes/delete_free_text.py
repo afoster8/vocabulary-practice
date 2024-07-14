@@ -42,6 +42,7 @@ class DeleteFreeText(tk.Frame):
         
         self.search_entry = tk.Entry(self, width=30)
         self.search_entry.grid(row=2, column=1, padx=10, pady=10)
+        self.search_entry.bind('<Return>', self.delete)
         
         delete_button = tk.Button(self, text='Delete', command=self.delete)
         delete_button.grid(row=2, column=2, padx=10, pady=10)
@@ -49,7 +50,7 @@ class DeleteFreeText(tk.Frame):
         return_home_button = tk.Button(self, text='Home', command=self.return_home)
         return_home_button.grid(row=3, column=0, columnspan=3, pady=10)
     
-    def delete(self):
+    def delete(self, event=None):
         self.message_label = tk.Label(self, text='', fg='red')
         self.message_label.grid(row=4, column=0, columnspan=3, pady=10)
         

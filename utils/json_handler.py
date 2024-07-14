@@ -89,9 +89,6 @@ def delete_from_json(key, mode, message_label, language=None):
                 json_data = []
     else:
         json_data = []
-        
-    for entry in json_data:
-      print(entry.keys())
 
     filtered_data = [entry for entry in json_data if entry[mode].strip() != key.strip()]
     deleted_data = len(json_data) - len(filtered_data)
