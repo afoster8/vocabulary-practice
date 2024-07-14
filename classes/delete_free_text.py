@@ -42,7 +42,7 @@ class DeleteFreeText(tk.Frame):
         
         self.search_entry = tk.Entry(self, width=30)
         self.search_entry.grid(row=2, column=1, padx=10, pady=10)
-        self.search_entry.bind('<Return>', self.delete)
+        self.search_entry.bind('<Return>', self.delete) 
         
         delete_button = tk.Button(self, text='Delete', command=self.delete)
         delete_button.grid(row=2, column=2, padx=10, pady=10)

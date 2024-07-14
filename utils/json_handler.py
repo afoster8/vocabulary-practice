@@ -84,7 +84,7 @@ def delete_from_json(key, mode, message_label, language=None):
     if os.path.exists(file_name):
         with open(file_name, 'r', encoding='utf-8') as file:
             try:
-                json_data = json.load(file)
+                json_data = json.load(file) 
             except json.JSONDecodeError:
                 json_data = []
     else:

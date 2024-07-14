@@ -42,7 +42,7 @@ class DeleteCSV(tk.Frame):
                 if hasattr(self, 'message_label'):
                     self.message_label.destroy()
                 
-        self.mode_var.trace_add('write', mode_changed)
+        self.mode_var.trace_add('write', mode_changed) 
         
         convert_button = tk.Button(self, text='Delete using CSV', command=self.convert_csv)
         convert_button.grid(row=3, column=0, columnspan=3, pady=10)

@@ -10,7 +10,7 @@ class AddCSV(tk.Frame):
 
     def create_widgets(self):
         csv_label = tk.Label(self, text='Select CSV File:')
-        csv_label.grid(row=0, column=0, padx=10, pady=10)
+        csv_label.grid(row=0, column=0, padx=10, pady=10) 
         self.csv_entry = tk.Entry(self, width=20)
         self.csv_entry.grid(row=0, column=1, padx=10, pady=10)
         browse_button = tk.Button(self, text='Browse', command=self.browse_csv_file)

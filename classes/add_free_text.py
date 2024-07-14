@@ -102,7 +102,7 @@ class AddFreeText(tk.Frame):
         self.onyomi_entry.bind('<Return>', self.save_to_json)
         
         self.kunyomi_label = tk.Label(self, text='Kunyomi:')
-        self.kunyomi_label.grid(row=4, column=0, padx=10, pady=10)
+        self.kunyomi_label.grid(row=4, column=0, padx=10, pady=10) 
         
         self.kunyomi_entry = tk.Entry(self, width=30)
         self.kunyomi_entry.grid(row=4, column=1, padx=10, pady=10)

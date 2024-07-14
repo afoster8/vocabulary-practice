@@ -26,7 +26,7 @@ def convert_csv_to_json(file_path, mode, message_label, language=None):
             data = list(csv_reader)
         
         filtered_data = []
-        
+         
         for row in data:
             if mode == 'kanji' and len(row) == 3 and len(row[0]) > 0:
                 filtered_data.append({expected_fields[i]: row[i].strip() for i in range(3)})
