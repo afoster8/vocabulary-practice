@@ -1,0 +1,26 @@
+[
+    {
+        "word": "orange",
+        "meaning": "orange",
+        "gender": "f",
+        "level": 0
+    },
+    {
+        "word": "drink",
+        "meaning": "boisson",
+        "gender": "f",
+        "level": 0
+    },
+    {
+        "word": "car",
+        "meaning": "voiture",
+        "gender": "f",
+        "level": 0
+    },
+    {
+        "word": "apple",
+        "meaning": "pomme de terre",
+        "gender": "f",
+        "level": 0
+    }
+]
