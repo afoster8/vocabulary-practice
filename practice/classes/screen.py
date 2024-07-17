@@ -96,7 +96,9 @@ class Screen(tk.Frame):
         answer_kana = cv.romajiToJapanese(self.answer_entry.get().strip())
         
         for field_name in self.field_names_to_check:
-            if answer == self.current_word.get(field_name) or answer_kana == self.current_word.get(field_name):
+            field_names = self.current_word.get(field_name).split(', ')
+            print(field_names)
+            if answer in field_names or answer_kana in field_names:
                 if not self.answered_incorrectly:
                     self.correct_count += 1
                     self.level_up()
